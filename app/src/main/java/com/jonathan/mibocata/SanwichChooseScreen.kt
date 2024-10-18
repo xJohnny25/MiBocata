@@ -11,6 +11,7 @@ class SanwichChooseScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_sanwich_choose_screen)
-        //MainActivity.navigatiBetweenPages()
+
+
     }
 }

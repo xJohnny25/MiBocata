@@ -1,6 +1,5 @@
 package com.jonathan.mibocata
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -19,12 +18,6 @@ class MainActivity : AppCompatActivity() {
     private var userPrueba = "Usuario"
     private var passPrueba = "1234"
 
-    companion object{
-        fun navigatiBetweenPages(activity: Activity, claseDestino: Class<*>){
-            val intent = Intent(activity, claseDestino)
-            activity.startActivity(intent)
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +35,8 @@ class MainActivity : AppCompatActivity() {
             if (userText.isBlank() || passText.isBlank()){
                 Toast.makeText(this, "El campo no puede estar vacío", Toast.LENGTH_LONG).show()
             }else if (userText.equals(userPrueba) || passText.equals(passPrueba)) {
-                navigatiBetweenPages(this, SanwichChooseScreen::class.java)
+                val intent = Intent(this, SanwichChooseScreen::class.java)
+                startActivity(intent)
             }else{
                 Toast.makeText(this, "El usuario o la contraseña no existen", Toast.LENGTH_LONG).show()
             }
