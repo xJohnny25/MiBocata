@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paredblanca"
+    tools:context=".calla">
+
+    <View
+        android:id="@+id/hotSandwichCountBox"
+        android:layout_width="178dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.85"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/apporange"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="409dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="111dp"
+        android:alpha="1"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/userAccountIcon"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:contentDescription="@string/user_account_png"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/useraccount" />
+
+    <ImageView
+        android:id="@+id/invoiceIcon"
+        android:layout_width="72dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/userAccountIcon"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.448"
+        app:srcCompat="@drawable/invoice" />
+
+    <ImageView
+        android:id="@+id/calendarIcon"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toEndOf="@+id/userAccountIcon"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="90dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_15"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="126dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.417"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/monthlyTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/total_mensual"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <View
+        android:id="@+id/coldSandwichCountBox"
+        android:layout_width="178dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="16dp"
+        android:alpha="0.85"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/appgreen"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/coldSandwichCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irish"
+        android:text="@string/_10"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/coldSandwichCountBox"
+        app:layout_constraintEnd_toEndOf="@+id/coldSandwichCountBox"
+        app:layout_constraintStart_toStartOf="@+id/coldSandwichCountBox"
+        app:layout_constraintTop_toTopOf="@+id/coldSandwichCountBox" />
+
+    <TextView
+        android:id="@+id/hotSandwichCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irish"
+        android:text="@string/_5"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/hotSandwichCountBox"
+        app:layout_constraintEnd_toEndOf="@+id/hotSandwichCountBox"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/hotSandwichCountBox"
+        app:layout_constraintTop_toTopOf="@+id/hotSandwichCountBox" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="411dp"
+        android:layout_height="426dp"
+        android:alpha="0.9"
+        android:background="#FAF3F3"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="FILTROS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sandwichRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+
+    <TextView
+        android:id="@+id/sandwichRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="326dp"
+        android:fontFamily="@font/poppins"
+        android:text="HISTÓRICO DE BOCADILLOS"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:alpha="1"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:clickable="false"
+        android:foregroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/view11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view11"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <TextView
+        android:id="@+id/orderDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="09-10-24"
+        android:textColor="@color/appgreen"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <TextView
+        android:id="@+id/sandwichName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Bocadillo de jamón serrano"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toEndOf="@+id/orderDay"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="56dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/sandwichName3"
+        android:layout_width="213dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Bocadillo de pollo con tomate"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/orderDay3"
+        app:layout_constraintTop_toTopOf="@+id/view11"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/orderDay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="10-10-24"
+        android:textColor="@color/apporange"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view11"
+        app:layout_constraintVertical_bias="0.496" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
