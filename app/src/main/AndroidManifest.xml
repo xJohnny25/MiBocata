@@ -23,7 +23,7 @@
             android:name=".UserAccountPage"
             android:exported="false" />
         <activity
-            android:name=".SanwichChooseScreen"
+            android:name=".SandwichChooseScreen"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
