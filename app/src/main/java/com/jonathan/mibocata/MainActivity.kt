@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             if (userText.isBlank() || passText.isBlank()){
                 Toast.makeText(this, "El campo no puede estar vacío", Toast.LENGTH_LONG).show()
             }else if (userText.equals(userPrueba) || passText.equals(passPrueba)) {
-                val intent = Intent(this, SanwichChooseScreen::class.java)
+                val intent = Intent(this, SandwichChooseScreen::class.java)
                 startActivity(intent)
             }else{
                 Toast.makeText(this, "El usuario o la contraseña no existen", Toast.LENGTH_LONG).show()
