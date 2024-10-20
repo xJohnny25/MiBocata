@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/paredblanca"
-    tools:context=".calla">
+    android:background="@drawable/paredblanca">
 
     <View
         android:id="@+id/hotSandwichCountBox"
