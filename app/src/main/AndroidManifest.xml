@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MiBocata"
         tools:targetApi="31">
         <activity
+            android:name=".BocataHistorial"
+            android:exported="false" />
+        <activity
             android:name=".SandwichCalendar"
             android:exported="false"
             android:theme="@style/Theme.MiBocata" />
