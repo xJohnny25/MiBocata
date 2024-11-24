@@ -10,8 +10,9 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="322dp"
-        android:layout_height="274dp"
+        android:layout_width="355dp"
+        android:layout_height="307dp"
+        android:layout_marginBottom="71dp"
         android:alpha="0.8"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
@@ -19,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.888" />
 
     <Button
@@ -32,28 +33,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <EditText
-        android:id="@+id/passwordField"
-        android:layout_width="227dp"
-        android:layout_height="47dp"
-        android:height="48dp"
-        android:autofillHints="passwordField"
-        android:backgroundTint="#0BC127"
-        android:ems="10"
-        android:fontFamily="@font/irish"
-        android:hint="@string/contrase_a"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.883" />
 
     <EditText
         android:id="@+id/userField"
@@ -69,15 +51,40 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="227dp"
+        android:layout_height="47dp"
+        android:height="48dp"
+        android:autofillHints="passwordField"
+        android:backgroundTint="#0BC127"
+        android:ems="10"
+        android:fontFamily="@font/irish"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.491" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="267dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+[
+  {
+    "usuario": "Usuario1",
+    "mac": "11:11:11:11:11:11",
+    "contrasena": "hola1"
+  },
+  {
+    "usuario": "Usuario2",
+    "mac": "22:22:22:22:22:22",
+    "contrasena": "hola12"
+  },
+  {
+    "usuario": "Usuario3",
+    "mac": "33:33:33:33:33:33",
+    "contrasena": "hola123"
+  },
+  {
+    "usuario": "Usuario4",
+    "mac": "44:44:44:44:44:44",
+    "contrasena": "hola1234"
+  },
+  {
+    "usuario": "Usuario5",
+    "mac": "55:55:55:55:55:55",
+    "contrasena": "hola1245"
+  }
+]

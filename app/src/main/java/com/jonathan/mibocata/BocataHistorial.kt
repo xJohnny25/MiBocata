@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.time.LocalDate
 
 class BocataHistorial : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,7 +76,7 @@ class BocataHistorial : AppCompatActivity() {
         val listaBocatas = listOf(
             Bocata(
                 "Bocata de Jamón Serrano",
-                null,
+                LocalDate.of(2024, 11, 10),
                 true,
                 25.00,
                 tiposBocata[0],
@@ -83,15 +84,15 @@ class BocataHistorial : AppCompatActivity() {
             ),
             Bocata(
                 "Bocata de Jamón York",
-                null,
-                true,
+                LocalDate.of(2024, 11, 10),
+                false,
                 22.00,
                 tiposBocata[1],
                 listOf("2", "5")
             ),
             Bocata(
                 "Bocata de Sobrasada y Miel",
-                null,
+                LocalDate.of(2024, 11, 11),
                 true,
                 20.00,
                 tiposBocata[2],
@@ -99,15 +100,15 @@ class BocataHistorial : AppCompatActivity() {
             ),
             Bocata(
                 "Bocata de Chorizo y Queso de Cabra",
-                null,
-                true,
+                LocalDate.of(2024, 11, 11),
+                false,
                 23.00,
                 tiposBocata[3],
                 listOf("4", "8")
             ),
             Bocata(
                 "Bocata de Atún y Tomate",
-                null,
+                LocalDate.of(2024, 11, 12),
                 true,
                 18.00,
                 tiposBocata[4],
@@ -115,15 +116,15 @@ class BocataHistorial : AppCompatActivity() {
             ),
             Bocata(
                 "Bocata de Pavo y Aguacate",
-                null,
-                true,
+                LocalDate.of(2024, 11, 12),
+                false,
                 24.00,
                 tiposBocata[5],
                 listOf("2", "9")
             ),
             Bocata(
                 "Bocata de Lomo Embuchado y Pimientos",
-                null,
+                LocalDate.of(2024, 11, 13),
                 true,
                 21.00,
                 tiposBocata[6],
@@ -131,15 +132,15 @@ class BocataHistorial : AppCompatActivity() {
             ),
             Bocata(
                 "Bocata de Salami y Queso Suizo",
-                null,
-                true,
+                LocalDate.of(2024, 11, 13),
+                false,
                 19.00,
                 tiposBocata[7],
                 listOf("5", "10")
             ),
             Bocata(
                 "Bocata de Pollo Asado y Espinaca",
-                null,
+                LocalDate.of(2024, 11, 14),
                 true,
                 22.50,
                 tiposBocata[8],
@@ -147,8 +148,8 @@ class BocataHistorial : AppCompatActivity() {
             ),
             Bocata(
                 "Bocata de Queso Brie y Membrillo",
-                null,
-                true,
+                LocalDate.of(2024, 11, 14),
+                false,
                 26.00,
                 tiposBocata[9],
                 listOf("1", "8")
