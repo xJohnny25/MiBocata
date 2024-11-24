@@ -28,16 +28,16 @@ class MainActivity : AppCompatActivity() {
         passwordField = findViewById(R.id.passwordField)
         loginButton = findViewById(R.id.submitButton)
 
-        loginButton.setOnClickListener{
+        loginButton.setOnClickListener {
             userText = userField.text.toString()
             passText = passwordField.text.toString()
 
-            if (userText.isBlank() || passText.isBlank()){
+            if (userText.isBlank() || passText.isBlank()) {
                 Toast.makeText(this, "El campo no puede estar vacío", Toast.LENGTH_LONG).show()
-            }else if (userText.equals(userPrueba) || passText.equals(passPrueba)) {
+            }else if (userText == userPrueba || passText == passPrueba) {
                 val intent = Intent(this, SandwichChooseScreen::class.java)
                 startActivity(intent)
-            }else{
+            }else {
                 Toast.makeText(this, "El usuario o la contraseña no existen", Toast.LENGTH_LONG).show()
             }
         }

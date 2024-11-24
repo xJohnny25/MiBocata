@@ -6,13 +6,11 @@ import android.widget.ImageView
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import java.time.LocalDate
 
 class InvoicePage : AppCompatActivity() {
     private lateinit var userAccountIcon: ImageView
-    private lateinit var calendaIcon: ImageView
+    private lateinit var calendarIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +18,7 @@ class InvoicePage : AppCompatActivity() {
         setContentView(R.layout.activity_invoice_page)
 
         userAccountIcon = findViewById(R.id.userAccountIcon)
-        calendaIcon = findViewById(R.id.calendarIcon)
+        calendarIcon = findViewById(R.id.calendarIcon)
 
         val tiposBocata = listOf(
             listOf(
@@ -85,7 +83,7 @@ class InvoicePage : AppCompatActivity() {
         val listaBocatas = listOf(
             Bocata(
                 "Bocata de Jamón Serrano",
-                LocalDate.of(2024, 11, 10),
+                LocalDate.of(2024, 11, 25),
                 true,
                 25.00,
                 tiposBocata[0],
@@ -93,28 +91,85 @@ class InvoicePage : AppCompatActivity() {
             ),
             Bocata(
                 "Bocata de Jamón York",
-                LocalDate.of(2024, 11, 10),
+                LocalDate.of(2024, 11, 26),
                 false,
                 22.00,
                 tiposBocata[1],
                 listOf("2", "5")
             ),
             Bocata(
-                "Bocata de Sobrasada y Miel",
-                LocalDate.of(2024, 11, 11),
+                "Cigarro y café",
+                LocalDate.of(2024, 11, 27),
                 true,
                 20.00,
                 tiposBocata[2],
                 listOf("3", "7")
+            ),
+            Bocata(
+                "Bocata para Paula",
+                LocalDate.of(2024, 11, 28),
+                false,
+                23.00,
+                tiposBocata[3],
+                listOf("4", "8")
+            ),
+            Bocata(
+                "Bocata de Atún y Tomate",
+                LocalDate.of(2024, 11, 29),
+                true,
+                18.00,
+                tiposBocata[4],
+                listOf("1", "6")
+            ),
+            Bocata(
+                "Bocata de Pavo y Aguacate",
+                LocalDate.of(2024, 11, 30),
+                false,
+                24.00,
+                tiposBocata[5],
+                listOf("2", "9")
+            ),
+            Bocata(
+                "Bocata de calamares",
+                LocalDate.of(2024, 12, 1),
+                true,
+                21.00,
+                tiposBocata[6],
+                listOf("3", "7")
+            ),
+            Bocata(
+                "Bocata de Salami",
+                LocalDate.of(2024, 12, 2),
+                false,
+                19.00,
+                tiposBocata[7],
+                listOf("5", "10")
+            ),
+            Bocata(
+                "Bocata de Pollo",
+                LocalDate.of(2024, 12, 3),
+                true,
+                22.50,
+                tiposBocata[8],
+                listOf("6", "9")
+            ),
+            Bocata(
+                "Bocata de Queso",
+                LocalDate.of(2024, 12, 4),
+                false,
+                26.00,
+                tiposBocata[9],
+                listOf("1", "8")
             )
         )
+
 
         userAccountIcon.setOnClickListener {
             val intent = Intent(this, UserAccountPage::class.java)
             startActivity(intent)
         }
 
-        calendaIcon.setOnClickListener {
+        calendarIcon.setOnClickListener {
             val intent = Intent(this, SandwichCalendar::class.java)
             startActivity(intent)
         }

@@ -38,6 +38,8 @@ class SandwichAdapter (
 
         if (producto.tipo){
             fecha.setTextColor(Color.parseColor("#35C64A"))
+        } else {
+            fecha.setTextColor(Color.parseColor("#F28162"))
         }
 
         return view
