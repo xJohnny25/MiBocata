@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "bocata de jamon",
+    "tipo": true,
+    "ingredientes": ["jamon serrano", "aceite", "queso", "pan de centeno"],
+    "alergenos": ["2", "5"]
+  },
+  {
+    "nombre": "bocata de chorizo",
+    "tipo": true,
+    "ingredientes": ["chorizo", "queso manchego", "pan blanco"],
+    "alergenos": ["3", "7"]
+  },
+  {
+    "nombre": "bocata de tortilla",
+    "tipo": false,
+    "ingredientes": ["tortilla francesa", "pimiento rojo", "pan rústico"],
+    "alergenos": ["3", "5"]
+  },
+  {
+    "nombre": "bocata vegetal",
+    "tipo": true,
+    "ingredientes": ["aguacate", "rúcula", "pan integral"],
+    "alergenos": ["11", "5"]
+  },
+  {
+    "nombre": "bocata de atún",
+    "tipo": false,
+    "ingredientes": ["atún", "huevo cocido", "mayonesa", "pan integral"],
+    "alergenos": ["4", "3"]
+  },
+  {
+    "nombre": "bocata de queso y nueces",
+    "tipo": true,
+    "ingredientes": ["queso brie", "nueces", "miel", "pan de cereales"],
+    "alergenos": ["8", "7"]
+  },
+  {
+    "nombre": "bocata de pollo",
+    "tipo": true,
+    "ingredientes": ["pollo asado", "lechuga", "salsa barbacoa", "pan brioche"],
+    "alergenos": ["9", "5"]
+  },
+  {
+    "nombre": "bocata de jamón y tomate",
+    "tipo": false,
+    "ingredientes": ["jamón ibérico", "tomate triturado", "aceite de oliva", "pan de cristal"],
+    "alergenos": ["2"]
+  }
+]

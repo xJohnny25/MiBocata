@@ -9,16 +9,15 @@ import androidx.appcompat.app.AppCompatActivity
 class SandwichChooseScreen : AppCompatActivity() {
     private lateinit var invoiceIcon: ImageView
     private lateinit var userAccountIcon: ImageView
-    private lateinit var calendaIcon: ImageView
+    private lateinit var calendarIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_sandwich_choose_screen)
 
         invoiceIcon = findViewById(R.id.invoiceIcon)
         userAccountIcon = findViewById(R.id.userAccountIcon)
-        calendaIcon = findViewById(R.id.calendarIcon)
+        calendarIcon = findViewById(R.id.calendarIcon)
 
         invoiceIcon.setOnClickListener {
             val intent = Intent(this, InvoicePage::class.java)
@@ -30,7 +29,7 @@ class SandwichChooseScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
-        calendaIcon.setOnClickListener {
+        calendarIcon.setOnClickListener {
             val intent = Intent(this, SandwichCalendar::class.java)
             startActivity(intent)
         }

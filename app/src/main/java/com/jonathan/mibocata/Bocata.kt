@@ -1,10 +1,8 @@
 package com.jonathan.mibocata
 
-import java.time.LocalDate
-
 data class Bocata (
     val nombre: String,
-    val fecha : LocalDate?,
+    val fecha : String?,
     val tipo: Boolean,
     val precio: Double,
     val ingredientes: List<String>,

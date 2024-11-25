@@ -33,7 +33,7 @@ class SandwichAdapter (
         val fecha = view.findViewById<TextView>(R.id.sandwichDate)
         val nombre = view.findViewById<TextView>(R.id.sandwichName)
 
-        fecha.text = "${producto.fecha}"
+        fecha.text = producto.fecha
         nombre.text = producto.nombre
 
         if (producto.tipo){

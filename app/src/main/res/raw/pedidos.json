@@ -1,0 +1,125 @@
+[
+  {
+    "alumno": "Usuario",
+    "pedidos": [
+      {
+        "nombre": "bocata de jamon",
+        "fecha": "2024-11-25",
+        "tipo": true,
+        "ingredientes": ["jamon serrano", "aceite", "queso", "pan de centeno"],
+        "alergenos": ["2", "5"]
+      },
+      {
+        "nombre": "bocata de atún",
+        "fecha": "2024-11-26",
+        "tipo": false,
+        "ingredientes": ["atún", "mayonesa", "lechuga", "pan integral"],
+        "alergenos": ["4", "7"]
+      },
+      {
+        "nombre": "bocata vegetal",
+        "fecha": "2024-11-27",
+        "tipo": true,
+        "ingredientes": ["tomate", "aguacate", "cebolla", "pan de semillas"],
+        "alergenos": ["11"]
+      },
+      {
+        "nombre": "bocata de pollo",
+        "fecha": "2024-11-28",
+        "tipo": true,
+        "ingredientes": ["pollo asado", "queso", "mostaza", "pan blanco"],
+        "alergenos": ["3", "9"]
+      },
+      {
+        "nombre": "bocata de tortilla",
+        "fecha": "2024-11-29",
+        "tipo": false,
+        "ingredientes": ["tortilla de patatas", "pimiento", "aceite", "pan rústico"],
+        "alergenos": ["2", "7"]
+      },
+      {
+        "nombre": "bocata de queso y nueces",
+        "fecha": "2024-11-30",
+        "tipo": true,
+        "ingredientes": ["queso azul", "nueces", "rúcula", "pan multicereales"],
+        "alergenos": ["8", "7"]
+      }
+    ]
+  },
+  {
+    "alumno": "Juan Pérez",
+    "pedidos": [
+      {
+        "nombre": "bocata de jamon",
+        "fecha": "2024-11-25",
+        "tipo": true,
+        "ingredientes": ["jamon serrano", "aceite", "queso", "pan de centeno"],
+        "alergenos": ["2", "5"]
+      },
+      {
+        "nombre": "bocata de chorizo",
+        "fecha": "2024-11-26",
+        "tipo": true,
+        "ingredientes": ["chorizo", "queso manchego", "pan blanco"],
+        "alergenos": ["7"]
+      }
+    ]
+  },
+  {
+    "alumno": "María López",
+    "pedidos": [
+      {
+        "nombre": "bocata de tortilla",
+        "fecha": "2024-11-27",
+        "tipo": false,
+        "ingredientes": ["tortilla francesa", "pimiento rojo", "pan rústico"],
+        "alergenos": ["3"]
+      },
+      {
+        "nombre": "bocata vegetal",
+        "fecha": "2024-11-28",
+        "tipo": true,
+        "ingredientes": ["aguacate", "rúcula", "pan integral"],
+        "alergenos": ["11"]
+      }
+    ]
+  },
+  {
+    "alumno": "Carlos García",
+    "pedidos": [
+      {
+        "nombre": "bocata de atún",
+        "fecha": "2024-11-29",
+        "tipo": false,
+        "ingredientes": ["atún", "huevo cocido", "mayonesa", "pan integral"],
+        "alergenos": ["4", "3"]
+      },
+      {
+        "nombre": "bocata de queso y nueces",
+        "fecha": "2024-11-30",
+        "tipo": true,
+        "ingredientes": ["queso brie", "nueces", "miel", "pan de cereales"],
+        "alergenos": ["8", "7"]
+      }
+    ]
+  },
+  {
+    "alumno": "Lucía Fernández",
+    "pedidos": [
+      {
+        "nombre": "bocata de pollo",
+        "fecha": "2024-12-01",
+        "tipo": true,
+        "ingredientes": ["pollo asado", "lechuga", "salsa barbacoa", "pan brioche"],
+        "alergenos": ["9", "5"]
+      },
+      {
+        "nombre": "bocata de jamón y tomate",
+        "fecha": "2024-12-02",
+        "tipo": false,
+        "ingredientes": ["jamón ibérico", "tomate triturado", "aceite de oliva", "pan de cristal"],
+        "alergenos": ["2"]
+      }
+    ]
+  }
+]

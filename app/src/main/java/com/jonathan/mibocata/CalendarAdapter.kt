@@ -32,7 +32,7 @@ class CalendarAdapter (
             val fecha = view.findViewById<TextView>(R.id.calendarSandwichDate)
             val nombre = view.findViewById<TextView>(R.id.calendarSandwichName)
 
-            fecha.text = "${producto.fecha}"
+            fecha.text = producto.fecha
             nombre.text = producto.nombre
 
             if (producto.tipo){
