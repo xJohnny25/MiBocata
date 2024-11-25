@@ -2,6 +2,7 @@ package com.jonathan.mibocata
 
 data class Bocata (
     val nombre: String,
+    val dia: String?,
     val fecha : String?,
     val tipo: Boolean,
     val precio: Double,

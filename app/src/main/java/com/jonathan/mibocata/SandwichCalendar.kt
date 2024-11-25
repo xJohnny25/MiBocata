@@ -5,15 +5,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.GridView
 import android.widget.ImageView
-import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStreamReader
-import java.time.LocalDate
 
 class SandwichCalendar : AppCompatActivity() {
     private lateinit var invoiceIcon: ImageView
@@ -41,11 +37,11 @@ class SandwichCalendar : AppCompatActivity() {
 
 
 
-        val listView = findViewById<GridView>(R.id.gridView)
+        val gridView = findViewById<GridView>(R.id.gridView)
 
         val adapter = CalendarAdapter(this, listaBocatas)
 
-        listView.adapter = adapter
+        gridView.adapter = adapter
     }
 
     private fun loadProducts(context: Context): List<Bocata> {

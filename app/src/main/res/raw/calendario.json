@@ -1,50 +1,149 @@
 [
   {
-    "nombre": "bocata de jamon",
+    "nombre": "Bocata vegetal",
+    "dia": "Lunes",
     "tipo": true,
-    "ingredientes": ["jamon serrano", "aceite", "queso", "pan de centeno"],
-    "alergenos": ["2", "5"]
+    "ingredientes": [
+      "hummus",
+      "zanahoria rallada",
+      "rúcula",
+      "pan integral"
+    ],
+    "alergenos": [
+      "5",
+      "9"
+    ]
   },
   {
-    "nombre": "bocata de chorizo",
-    "tipo": true,
-    "ingredientes": ["chorizo", "queso manchego", "pan blanco"],
-    "alergenos": ["3", "7"]
-  },
-  {
-    "nombre": "bocata de tortilla",
+    "nombre": "Bocata de jamón",
+    "dia": "Lunes",
     "tipo": false,
-    "ingredientes": ["tortilla francesa", "pimiento rojo", "pan rústico"],
-    "alergenos": ["3", "5"]
+    "ingredientes": [
+      "jamón serrano",
+      "aceite",
+      "queso",
+      "pan de centeno"
+    ],
+    "alergenos": [
+      "2",
+      "5"
+    ]
   },
   {
-    "nombre": "bocata vegetal",
+    "nombre": "Bocata de Paula",
+    "dia": "Martes",
     "tipo": true,
-    "ingredientes": ["aguacate", "rúcula", "pan integral"],
-    "alergenos": ["11", "5"]
+    "ingredientes": [
+      "jamón ibérico",
+      "tomate triturado",
+      "aceite de oliva",
+      "pan de cristal"
+    ],
+    "alergenos": [
+      "2"
+    ]
   },
   {
-    "nombre": "bocata de atún",
+    "nombre": "Bocata de chorizo",
+    "dia": "Martes",
     "tipo": false,
-    "ingredientes": ["atún", "huevo cocido", "mayonesa", "pan integral"],
-    "alergenos": ["4", "3"]
+    "ingredientes": [
+      "chorizo",
+      "queso manchego",
+      "pan blanco"
+    ],
+    "alergenos": [
+      "3",
+      "7"
+    ]
   },
   {
-    "nombre": "bocata de queso y nueces",
+    "nombre": "Bocata de tortilla",
+    "dia": "Miércoles",
     "tipo": true,
-    "ingredientes": ["queso brie", "nueces", "miel", "pan de cereales"],
-    "alergenos": ["8", "7"]
+    "ingredientes": [
+      "tortilla francesa",
+      "pimiento rojo",
+      "pan rústico"
+    ],
+    "alergenos": [
+      "3",
+      "5"
+    ]
   },
   {
-    "nombre": "bocata de pollo",
-    "tipo": true,
-    "ingredientes": ["pollo asado", "lechuga", "salsa barbacoa", "pan brioche"],
-    "alergenos": ["9", "5"]
-  },
-  {
-    "nombre": "bocata de jamón y tomate",
+    "nombre": "Bocata queso",
+    "dia": "Miércoles",
     "tipo": false,
-    "ingredientes": ["jamón ibérico", "tomate triturado", "aceite de oliva", "pan de cristal"],
-    "alergenos": ["2"]
+    "ingredientes": [
+      "aguacate",
+      "rúcula",
+      "queso fresco",
+      "pan integral"
+    ],
+    "alergenos": [
+      "7",
+      "9"
+    ]
+  },
+  {
+    "nombre": "Cigarro y café",
+    "dia": "Jueves",
+    "tipo": true,
+    "ingredientes": [
+      "aguacate",
+      "rúcula",
+      "pan integral"
+    ],
+    "alergenos": [
+      "11",
+      "5"
+    ]
+  },
+  {
+    "nombre": "Bocata de queso y atún",
+    "dia": "Jueves",
+    "tipo": false,
+    "ingredientes": [
+      "atún",
+      "huevo duro",
+      "mayonesa",
+      "pan blanco"
+    ],
+    "alergenos": [
+      "3",
+      "4",
+      "9"
+    ]
+  },
+  {
+    "nombre": "Bocata de atún",
+    "dia": "Viernes",
+    "tipo": true,
+    "ingredientes": [
+      "atún",
+      "huevo cocido",
+      "mayonesa",
+      "pan integral"
+    ],
+    "alergenos": [
+      "4",
+      "3"
+    ]
+  },
+  {
+    "nombre": "Bocata de Paula",
+    "dia": "Viernes",
+    "tipo": false,
+    "ingredientes": [
+      "tortilla de patatas",
+      "alioli",
+      "pimientos verdes",
+      "pan rústico"
+    ],
+    "alergenos": [
+      "3",
+      "9"
+    ]
   }
 ]
