@@ -3,8 +3,10 @@ package com.jonathan.mibocata
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.ListView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,16 +18,35 @@ import java.time.LocalDate
 class InvoicePage : AppCompatActivity() {
     private lateinit var userAccountIcon: ImageView
     private lateinit var calendarIcon: ImageView
+    private lateinit var totalPrice: TextView
+    private lateinit var coldSandwichCount: TextView
+    private lateinit var hotSandwichCount: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_invoice_page)
 
+        var coldCounter = 0;
+        var hotCounter = 0;
+        var price = 0;
+
         userAccountIcon = findViewById(R.id.userAccountIcon)
         calendarIcon = findViewById(R.id.calendarIcon)
+        totalPrice = findViewById(R.id.price)
+        coldSandwichCount = findViewById(R.id.coldSandwichCount)
+        hotSandwichCount = findViewById(R.id.hotSandwichCount)
 
         val listaBocatas = loadProducts(this)
+
+        for (bocata in listaBocatas) {
+            if (bocata.tipo) {
+                coldCounter++
+            } else {
+                hotCounter++
+            }
+            price += bocata.precio.toInt()
+        }
 
         userAccountIcon.setOnClickListener {
             val intent = Intent(this, UserAccountPage::class.java)
@@ -36,6 +57,10 @@ class InvoicePage : AppCompatActivity() {
             val intent = Intent(this, SandwichCalendar::class.java)
             startActivity(intent)
         }
+
+        totalPrice.text = "$price€"
+        coldSandwichCount.text = coldCounter.toString()
+        hotSandwichCount.text = hotCounter.toString()
 
         val listView = findViewById<ListView>(R.id.listView)
 

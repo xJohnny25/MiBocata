@@ -5,11 +5,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.GridView
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStreamReader
+import java.time.LocalDate
+import java.time.format.TextStyle
+import java.util.Locale
 
 class SandwichCalendar : AppCompatActivity() {
     private lateinit var invoiceIcon: ImageView
@@ -23,8 +27,6 @@ class SandwichCalendar : AppCompatActivity() {
         invoiceIcon = findViewById(R.id.invoiceIcon)
         userAccountIcon = findViewById(R.id.userAccountIcon)
 
-        val listaBocatas = loadProducts(this)
-
         invoiceIcon.setOnClickListener {
             val intent = Intent(this, InvoicePage::class.java)
             startActivity(intent)
@@ -35,7 +37,12 @@ class SandwichCalendar : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val nextDayColdSandwichName = findViewById<TextView>(R.id.nextDayColdSandwichName)
+        val nextDayHotSandwichName = findViewById<TextView>(R.id.nextDayHotSandwichName)
+        
+        changeNameSandwichCalendar(nextDayHotSandwichName, nextDayColdSandwichName)
 
+        val listaBocatas = loadProducts(this)
 
         val gridView = findViewById<GridView>(R.id.gridView)
 
@@ -53,5 +60,21 @@ class SandwichCalendar : AppCompatActivity() {
         val bocatas : List<Bocata> = Gson().fromJson(reader, type)
 
         return bocatas
+    }
+
+    private fun changeNameSandwichCalendar(hotsandwich: TextView, coldSandwich: TextView) {
+        val bocatas = loadProducts(this)
+
+        val tomorrow = LocalDate.now().dayOfWeek.plus(1)
+
+        val tomorrowName = tomorrow.getDisplayName(TextStyle.FULL, Locale("es", "ES"))
+
+        for (bocata in bocatas) {
+            if (bocata.dia?.lowercase() == tomorrowName.toString() && !bocata.tipo) {
+                hotsandwich.text = bocata.nombre
+            } else if (bocata.dia?.lowercase() == tomorrowName.toString()) {
+                coldSandwich.text = bocata.nombre
+            }
+        }
     }
 }

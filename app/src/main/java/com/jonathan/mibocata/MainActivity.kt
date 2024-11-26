@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userText: String
     private lateinit var passText: String
 
-    private var userPrueba = "Usuario"
-    private var passPrueba = "1234"
+    private val userPrueba = "Usuario"
+    private val passPrueba = "1234"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
 
             if (userText.isBlank() || passText.isBlank()) {
                 Toast.makeText(this, "El campo no puede estar vacío", Toast.LENGTH_LONG).show()
-            }else if (userText == userPrueba || passText == passPrueba) {
+            } else if (userText == userPrueba || passText == passPrueba) {
                 val intent = Intent(this, SandwichChooseScreen::class.java)
                 startActivity(intent)
-            }else {
+            } else {
                 Toast.makeText(this, "El usuario o la contraseña no existen", Toast.LENGTH_LONG).show()
             }
         }
