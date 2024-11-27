@@ -21,6 +21,7 @@ class InvoicePage : AppCompatActivity() {
     private lateinit var totalPrice: TextView
     private lateinit var coldSandwichCount: TextView
     private lateinit var hotSandwichCount: TextView
+    private lateinit var logoApp: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,7 @@ class InvoicePage : AppCompatActivity() {
 
         userAccountIcon = findViewById(R.id.userAccountIcon)
         calendarIcon = findViewById(R.id.calendarIcon)
+        logoApp = findViewById(R.id.logoApp)
         totalPrice = findViewById(R.id.price)
         coldSandwichCount = findViewById(R.id.coldSandwichCount)
         hotSandwichCount = findViewById(R.id.hotSandwichCount)
@@ -55,6 +57,11 @@ class InvoicePage : AppCompatActivity() {
 
         calendarIcon.setOnClickListener {
             val intent = Intent(this, SandwichCalendar::class.java)
+            startActivity(intent)
+        }
+
+        logoApp.setOnClickListener {
+            val intent = Intent(this, SandwichChooseScreen::class.java)
             startActivity(intent)
         }
 

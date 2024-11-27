@@ -98,8 +98,8 @@
 
     <TextView
         android:id="@+id/bocadilloCaliente"
-        android:layout_width="249dp"
-        android:layout_height="91dp"
+        android:layout_width="344dp"
+        android:layout_height="35dp"
         android:fontFamily="@font/irish"
         android:text="@string/bocadillo_caliente"
         android:textAlignment="center"
@@ -110,42 +110,42 @@
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.142" />
 
     <TextView
         android:id="@+id/bocadilloFrioTexto"
-        android:layout_width="304dp"
-        android:layout_height="93dp"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
         android:fontFamily="@font/irish"
         android:linksClickable="false"
-        android:text="@string/hoy_tenemos_bocadillo_de_at_n_con_tomate"
+        android:text="Bocadillo frio"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="@+id/view3"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toTopOf="@+id/view3"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.589" />
 
     <TextView
         android:id="@+id/bocadilloCalienteTexto"
-        android:layout_width="321dp"
-        android:layout_height="141dp"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
         android:fontFamily="@font/irish"
-        android:text="@string/hoy_tenemos_bocadillo_de_salchicha_blanca_y_mayonesa"
+        android:text="Bocadillo caliente"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="@+id/view4"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:layout_constraintVertical_bias="0.763" />
+        app:layout_constraintVertical_bias="0.652" />
 
     <ImageView
         android:id="@+id/userAccountIcon"

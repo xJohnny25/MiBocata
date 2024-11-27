@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class UserAccountPage : AppCompatActivity() {
     private lateinit var invoiceIcon: ImageView
     private lateinit var calendaIcon: ImageView
+    private lateinit var logoApp: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +18,7 @@ class UserAccountPage : AppCompatActivity() {
 
         invoiceIcon = findViewById(R.id.invoiceIcon)
         calendaIcon = findViewById(R.id.calendarIcon)
+        logoApp = findViewById(R.id.logoApp)
 
         invoiceIcon.setOnClickListener {
             val intent = Intent(this, InvoicePage::class.java)
@@ -25,6 +27,11 @@ class UserAccountPage : AppCompatActivity() {
 
         calendaIcon.setOnClickListener {
             val intent = Intent(this, SandwichCalendar::class.java)
+            startActivity(intent)
+        }
+
+        logoApp.setOnClickListener {
+            val intent = Intent(this, SandwichChooseScreen::class.java)
             startActivity(intent)
         }
     }

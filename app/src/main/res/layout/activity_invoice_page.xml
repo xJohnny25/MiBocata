@@ -93,7 +93,7 @@
         app:layout_constraintVertical_bias="0.314" />
 
     <ImageView
-        android:id="@+id/appLogo"
+        android:id="@+id/logoApp"
         android:layout_width="126dp"
         android:layout_height="83dp"
         android:layout_marginEnd="16dp"

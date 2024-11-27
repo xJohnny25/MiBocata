@@ -18,6 +18,7 @@ import java.util.Locale
 class SandwichCalendar : AppCompatActivity() {
     private lateinit var invoiceIcon: ImageView
     private lateinit var userAccountIcon: ImageView
+    private lateinit var logoApp: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,7 @@ class SandwichCalendar : AppCompatActivity() {
 
         invoiceIcon = findViewById(R.id.invoiceIcon)
         userAccountIcon = findViewById(R.id.userAccountIcon)
+        logoApp = findViewById(R.id.logoApp)
 
         invoiceIcon.setOnClickListener {
             val intent = Intent(this, InvoicePage::class.java)
@@ -34,6 +36,11 @@ class SandwichCalendar : AppCompatActivity() {
 
         userAccountIcon.setOnClickListener {
             val intent = Intent(this, UserAccountPage::class.java)
+            startActivity(intent)
+        }
+
+        logoApp.setOnClickListener {
+            val intent = Intent(this, SandwichChooseScreen::class.java)
             startActivity(intent)
         }
 

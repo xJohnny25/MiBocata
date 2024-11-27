@@ -44,7 +44,7 @@ class SandwichChooseScreen : AppCompatActivity() {
             Toast.makeText(this, "Tu pedido se empezará a preparar pronto", Toast.LENGTH_SHORT).show()
         }
 
-        coldView.setOnClickListener {
+        hotView.setOnClickListener {
             Toast.makeText(this, "Tu pedido se empezará a preparar pronto", Toast.LENGTH_SHORT).show()
         }
 
